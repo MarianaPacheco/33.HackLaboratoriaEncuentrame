@@ -1,0 +1,133 @@
+					/*** HEADER ***/
+nav.navbar {
+    background-color: #1495CE;
+}
+
+header{
+	height: 80px;
+}
+.logo{
+	margin-top: -3%;
+	height: 180%;
+	margin-left: 10%;
+}
+select{
+border-style: none!important;
+background-color: transparent!important;
+box-shadow: none!important;
+}
+/*SECCION*/
+section{
+	height: 520px;
+}
+/*FOOTER*/
+footer{
+	height: 100px;
+}
+		/*** UTILIDADES ***/
+/*Color de Fondo*/
+.bg-blue{
+	background-color: #1495CE;
+}
+/*Textos de color*/
+.text-white{
+	color: white!important;
+}
+.text-black{
+	color: black;
+}
+/*Padding*/
+.pd-0{
+	padding: 0;
+}
+.pd-3{
+	padding: 3%;
+}
+.pdr-3{
+	padding-right: 3%;
+}
+.pd-5{
+	padding: 5%;
+}
+/*Margin*/
+.m-0{
+	margin: 0;
+}
+.blue{
+	height: 500px;
+}
+#blue1{
+	background-color:#191919;
+}
+.text-blue, #blue1{
+	color:#191919;
+}
+.text-b{
+	color:#64d2ed;
+}
+#blue2{
+	background-color:#5191fd;
+}
+#blue3{
+	background-color:#64d2ed;	
+}
+.p-60{
+	padding-top:60%;
+}
+h2:hover{
+	font-size: 1.5em;
+	font-weight: bold;
+	color:#fff;
+}
+a{
+	text-decoration: none!important;
+}
+
+.p-contact{		/* Estilo del texto Contactanos */
+ 	font-size: 30px;
+ 	font-weight: bold;
+ 	margin-bottom: 20px;
+ }
+
+ input, textarea{		/* Estilo de las cajas de texto (nombre email y mensaje) */
+ 	width: 100%;
+ 	margin-bottom:20px;
+ 	padding: 7px;
+ 	box-sizing: border-box;
+ 	font-size: 17px;
+ }
+
+ textarea{		/* Estilo del area de mensaje */
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+ }
+ #boton{			/* Boton formulario */
+ 	padding: 6px;
+ 	color: #fff;
+ 	border-radius: 10px;
+ 	width: 25%;
+ }
+
+ #boton:hover{		/* Boton formulario */
+ 	cursor: pointer;
+ }
+ .btn{
+ 	background-color: transparent;
+ }
+input[type="checkbox"] {
+  margin: 4px 0 0 10px!important;
+}
+.ml-2{
+	border: 10px solid #fff;
+}
+p{
+	line-height: 2em;
+}
+.titulo{
+	width: 30%;
+}
+.mb-3{
+	margin-bottom: 3%;
+}
+

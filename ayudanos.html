@@ -2,9 +2,209 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ayudanos</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Hace que mi página sea compatible con Internet Explorer -->
+	<!--  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ENCUENTR@ME</title>
+	<link rel="shortcut icon" href="img/lupa-favicon.png"> <!-- "shortcut icon" nos indicaque es tipo icono, relación -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/queries.css">
+	<link rel="stylesheet" href="css/ayudanos.css">
 </head>
 <body>
-	
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<nav class="navbar navbar-default navbar-fixed-top pdr-3" role="navigation">
+						<!-- El logotipo y el icono que despliega el menú se agrupan para mostrarlos mejor en los dispositivos móviles -->
+	  					<div class="navbar-header">
+	    					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							    <span class="sr-only">Desplegar navegación</span>
+							    <span class="icon-bar text-white"></span>
+							    <span class="icon-bar text-white"></span>
+							    <span class="icon-bar text-white"></span>
+	    					</button>
+	    					<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="img-responsive logo"></a>
+	  					</div>
+						<!-- Agrupar los enlaces de navegación, los formularios y cualquier otro elemento que se pueda ocultar al minimizar la barra -->
+	  					<div class="collapse navbar-collapse navbar-ex1-collapse">
+		    				<ul class="nav navbar-nav navbar-right">
+		    					<li><a href="index.html" class="text-white">OBJETIVO</a></li>
+								<li><a href="ayudame.html" class="text-white">AYUDAME</a></li>
+								<!-- Combobox Ayudando -->
+						        <li class="navbar-btn"><select class="form-control text-white">
+										<option>AYUDANDO</option>
+										<option class="text-black">Niños</option>
+										<option class="text-black">Adolescentes</option>
+										<option class="text-black">Adultos</option>
+									</select>
+								</li>
+						        <li><a href="ayudanos.html" class="text-white">AYUDANOS</a></li>
+						        <li><a href="contacto.html" class="text-white">CONTACTO</a></li>
+					        </ul>
+						</div>
+	      			</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div id="blue2" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 blue ml-2">		<!-- Div izquierda con modal -->
+					<button id="btn_blue2" type="button" class="animated bounceInUp btn btn-lg p-60" data-toggle="modal" data-target="#myModal"><h2 class="text-blue col-xs-offset-2 p-50">Quiero contribuir</h2></button>		
+				</div>		
+					<div class="modal fade" id="myModal" role="dialog">
+				    	<div class="modal-dialog">
+				      <!-- Modal content-->
+					    <div class="modal-content">
+					        <div class="modal-header">
+					        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+					          		<h4 class="modal-title">Encuéntrame | Quiero contribuir</h4>
+					        </div>
+					        <div class="modal-body">
+					        	<form action>
+					        		<div class="row">
+					        			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						        			<div class="checkbox">
+											  <label><input type="checkbox" value="">Despensa</label>
+											</div>
+					        			</div>
+					        			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						        			<div class="checkbox">
+											  <label><input type="checkbox" value="">Ropa</label>
+											</div>
+					        			</div>
+					        			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						        			<div class="checkbox">
+											  <label><input type="checkbox" value="">Medicamento</label>
+											</div>
+					        			</div>
+					        		</div>
+					        		<center>	
+										<input type="text" name="nombre" placeholder="👤Nombre"><br>
+										<input type="text" name="email" placeholder="📧Email"><br>
+										<textarea name="mensaje" placeholder="Mensaje"></textarea><br>
+									</center>
+									<input class="btn-info" type="submit" name="enviar" value="Enviar e-mail" id="boton">
+								</form>
+					        </div>
+					        <div class="modal-footer">
+					          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        </div>
+					    </div>
+					    </div>
+				  	</div>
+				<div id="blue1" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 blue ml-2">		<!-- Div central -->
+					<button id="btn_blue2" type="button" class="animated bounceInUp btn btn-lg p-60" data-toggle="modal" data-target="#myModal2"><h2 class="text-b col-xs-offset-8 p-50">Sponsors</h2></button>		
+				</div>		
+					<div class="modal fade" id="myModal2" role="dialog">
+				    	<div class="modal-dialog">
+				      <!-- Modal content-->
+						    <div class="modal-content">
+						        <div class="modal-header">
+						        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+						          		<h4 class="modal-title">Encuéntrame | Sponsors</h4>
+						        </div>
+						        <div class="modal-body">
+									<div class="row">
+							        	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							        		<img class="img-responsive" src="img/soloporayudar.png" alt="image">
+							        	</div>
+							        	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							        		<img class="img-responsive" src="img/FundacionBred.jpg" alt="image">
+							        	</div>
+							        	<div class="pd-3 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							        		<img class="img-responsive" src="img/LogoFundacionHerdez.jpg" alt="image">
+							        	</div>
+							        </div>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						    </div>
+					    </div>
+				  	</div>
+				<div id="blue3" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 blue ml-2">		<!-- Div derecha modal -->
+					<button id="btn_blue2" type="button" class="animated bounceInUp btn btn-lg p-60" data-toggle="modal" data-target="#myModal3"><h2 class="animated rubberBand text-blue col-xs-offset-6 p-50">Voluntarios</h2></button>		
+				</div>		
+					<div class="modal fade" id="myModal3" role="dialog">
+				    	<div class="modal-dialog">
+				      <!-- Modal content-->
+					    <div class="modal-content">
+					        <div class="modal-header">
+					        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+					          		<h4 class="modal-title">Encuéntrame | Voluntarios</h4>
+					        </div>
+					        <div class="modal-body">
+					        	<form action>
+					        		<div class="row">
+					        			<div class="col-xs-12- col-sm-12 col-md-12 col-lg-12">
+						        			<h3><b>¿Te interesa nuestro trabajo y quieres echarnos una mano o realizar tu servicio social? <b></h3>
+						        			<p><b>A través del voluntariado tienes la oportunidad de colaborar con nosotros y aportar algo a la sociedad. Envíanos tus datos y muy pronto nos comunicaremos contigo.<b></p>
+					        			</div>
+					        		</div>
+					        		<center>	
+										<input type="text" name="nombre" placeholder="👤Nombre"><br>
+										<input type="text" name="email" placeholder="📧Email"><br>
+										<textarea name="mensaje" placeholder="Mensaje"></textarea><br>
+									</center>
+									<input class="btn-info" type="submit" name="enviar" value="Enviar e-mail" id="boton">
+								</form>
+					        </div>
+					        <div class="modal-footer">
+					          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        </div>
+					    </div>
+					    </div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section> 	<!-- n> 	juego de interaccion con la comunidad -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xs-offset-4">
+					<img class="titulo img-responsive mb-3" src="img/titlejuego.png" alt="image">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14999852.906097889!2d-111.56916700163153!3d23.38555949317235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses!2sco!4v1473191202141" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<p  class="text-blue text-justify">Con este juego podrás demostrar tu compromiso con la sociedad que más te necesita; entre más ayudes ganas mas puntos y estarás más cerca de  conseguir la insignia de Héroe Social.
+					Sólo tienes que enviar la ayuda al lugar correcto indicando en el mapa la ubicación de la persona que lo necesita y el personal apropiado de albergues y asociaciones podrá brindarles la ayuda necesaria, ya sea un hogar, vestido o alimento.</p><br>
+					<input class="#botonjuego btn-info" type="submit" name="enviar" value="Jugar ahora" id="boton">
+				</div>
+			</div>
+		</section>
+	</section>
+	<footer class="bg-blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<p>All Rights Reserved © <span>Encuentr@me</span></p>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+					<div class="pd-3">
+	 					<a href="#" class="text-white icono"><i class="fa fa-3 fa-facebook-square"></i></a>
+	 					<a href="#" class="text-white icono"><i class="fa fa-3 fa-instagram"></i></a>
+	 					<a href="#" class="text-white icono"><i class="fa fa-3 fa-twitter"></i></a>
+	 					<a href="#" class="text-white icono"><i class="fa fa-3 fa-youtube"></i></a>
+	 				</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Incluir todos tus scripts apartir de este punto -->
+    <!-- jQuery (necesario para que funcionen los componentes de Bootstrap) -->
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.main.js"></script>
 </body>
 </html>
